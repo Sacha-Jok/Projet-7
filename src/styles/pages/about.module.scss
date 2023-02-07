@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.__pic {
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+
+    background: $color-black;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+}
+
+.__banner {
+    margin: 0 100px 31px 100px;
+}

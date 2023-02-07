@@ -1,5 +1,5 @@
 import React from 'react';
-import whiteLogo from '../../assets/images/blackLogo.png';
+import whiteLogo from '../../assets/images/whiteLogo.png';
 
 import styles from "./styles.module.scss";
 
