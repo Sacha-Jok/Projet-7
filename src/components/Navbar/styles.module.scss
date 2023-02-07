@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+
+  .__logoKasa {
+    height: 68px;
+    margin: 0 10px;
+  }
+
+  a {
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 57px;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
