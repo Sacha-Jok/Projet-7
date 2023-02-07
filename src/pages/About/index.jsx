@@ -12,7 +12,7 @@ const About = () => {
     return (
         <div>
             <Navbar />
-            <div className={styles.__banner}><img className={styles.__pic} src={bannerImg} alt="Paysage" /></div>
+            <div className={styles.__banner}><img className={styles.__pic} src={bannerImg} alt="Paysage de montagnes enneigées" /></div>
             <Dropdown title={aboutTxt.first.title} text={aboutTxt.first.text} />
             <Dropdown title={aboutTxt.second.title} text={aboutTxt.second.text} />
             <Dropdown title={aboutTxt.third.title} text={aboutTxt.third.text} />
