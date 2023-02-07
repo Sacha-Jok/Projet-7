@@ -2,12 +2,12 @@
 
 .__details {
   margin: 0 208px 31px 208px;
-  &[open] {
+  /*&[open] {
     & img {
       transform : rotate(180deg);
       transition: 0.5s;
     }
-  }
+  }*/
   .__title {
     border-radius: 5px;
     background-color: $primary-color;
