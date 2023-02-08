@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.__pic {
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.__banner {
+    margin: 0 100px 31px 100px;
+}
+
+.__text {
+    position: absolute;
+    color: $secondary-color;
+    left: 10%;
+    width: 65%;
+}
