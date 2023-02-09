@@ -10,7 +10,7 @@ const Dropdown = ({title, text}) => {
         <summary className={styles.__title}>
             {title}
             <img id='arrow' src={arrow} alt=" Flèche" style={{
-                transform: `rotate(${isOpen ? 180 : 0}deg)`,
+                transform: `rotate(${isOpen ? -180 : 0}deg)`,
                 transition: "transform 0.5s ease"
                 }} 
             />
