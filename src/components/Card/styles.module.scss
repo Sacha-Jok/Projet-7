@@ -1,3 +1,28 @@
 @import "../../styles/variables";
 
+.__card {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.__cover{
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.__title{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: $color-white;
+}
 
