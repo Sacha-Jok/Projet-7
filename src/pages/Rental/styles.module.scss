@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+.__page {
+    margin: 0 100px;
+
+    & .__appartHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    
+        & .__title {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 51px;
+        }
+        & .__host{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            & .__name{
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+            }
+            & .__pic {
+                width: 64px;
+                height: 64px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    & .__subtitle{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 143%;
+        margin-bottom: 20px;
+    }
+
+    & .__stars{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+    }
+}
+
+.__dropdownContainer{
+    display: flex;
+    gap: 76px;
+    margin-bottom: 50px;
+    
+}
+
+.__carousel {
+    height: 50px;
+}
