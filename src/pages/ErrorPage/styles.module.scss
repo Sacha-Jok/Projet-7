@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.__errorPage{
+    text-align: center;
+  
+    .__number {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 143%;
+  }
+
+    .__message {
+        font-size: 36px;
+    }
+
+    & .__link {
+        margin-top: 182px;
+        font-size: 18px;
+        text-decoration: underline;
+  }
+}

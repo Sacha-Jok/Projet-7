@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
-import styles from "../../styles/pages/error-page.module.scss"
+import styles from "./styles.module.scss";
 
 const ErrorPage = () => {
     return (
