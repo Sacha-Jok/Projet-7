@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.__stars{
+    font-size: 30px;
+    line-height: 30px;
+
+    & .__white{
+        color: #E3E3E3;
+    }
+    
+    & .__red{
+        color: $primary-color;
+    }
+    
+}
+
