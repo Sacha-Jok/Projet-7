@@ -3,11 +3,11 @@
 .__pic {
     height: 223px;
     width: 100%;
-    border-radius: 25px;
+    border-radius: $radius;
 
     background: $black-color;
     mix-blend-mode: darken;
-    border-radius: 25px;
+    border-radius: $radius;
 }
 
 .__banner {
