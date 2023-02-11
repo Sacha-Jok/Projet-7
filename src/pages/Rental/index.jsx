@@ -12,20 +12,14 @@ import Rating from '../../components/Rating';
 import Lightbox from '../../components/Lightbox';
 
 const Rental = () => {
-
     const {id} = useParams();
     const appart = Rentals.find(obj => obj.id === id);
     const equipmentList = appart.equipments.map((equipment) => <li className={styles.__element} key={equipment}>{equipment}</li>);
-    
     if (!appart) {
         return(
             <ErrorPage />
         )
     }
-
-    console.log(appart)
-
-
     return (
         <div>
             <Navbar />
