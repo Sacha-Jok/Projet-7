@@ -7,7 +7,7 @@
 .__title {
   border-radius: 7.5px;
   background-color: $primary-color;
-  color: $color-white;
+  color: $white-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,6 +22,7 @@
 
 .__description {
   background-color: $secondary-color;
+  height: 80%;
   font-weight: 400;
   font-size: 24px;
   padding: 18px ;
