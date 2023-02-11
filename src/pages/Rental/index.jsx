@@ -9,6 +9,7 @@ import Dropdown from '../../components/Dropdown';
 import Tag from '../../components/Tag';
 import ErrorPage from '../ErrorPage';
 import Rating from '../../components/Rating';
+import Lightbox from '../../components/Lightbox';
 
 const Rental = () => {
 
@@ -29,7 +30,7 @@ const Rental = () => {
         <div>
             <Navbar />
                 <div className={styles.__page}>
-                    <div className={styles.__carousel}> </div>
+                    <Lightbox pictures={appart.pictures}/>
                     <div className={styles.__appartHeader}>
                         <h1 className={styles.__title}>{appart.title}</h1>
                         <div className={styles.__host}>
