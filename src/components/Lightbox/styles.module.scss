@@ -4,24 +4,22 @@
     position: relative;
     height: 415px;
 
-    & .__leftButton {
+    & .__button {
       position: absolute;
-      left: 0;
       top: 50%;
       transform: translateY(-50%);
-      margin-left: 24px;
+      margin: 24px;
       background-color: transparent;
       border: none;
+      cursor: pointer;
+    }
+
+    & .__leftButton {
+      left: 0;
     }
 
     & .__rightButton {
-      position: absolute;
       right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-right: 24px;
-      background-color: transparent;
-      border: none;
     }
 
     & .__image {
