@@ -2,6 +2,7 @@
 
 .__page {
     margin: 0 100px;
+    min-height: 73.4vh;
 
     & .__appartHeader {
         display: flex;
@@ -14,15 +15,18 @@
             font-weight: 500;
             line-height: 51px;
         }
+
         & .__host{
             display: flex;
             align-items: center;
             gap: 10px;
+            
             & .__name{
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 26px;
             }
+            
             & .__pic {
                 width: 64px;
                 height: 64px;
@@ -45,16 +49,12 @@
         margin-bottom: 24px;
 
     }
+
+    & .__dropdownContainer{
+        display: flex;
+        height: auto;
+        gap: 76px;
+        margin-bottom: 200px; 
+    }
 }
 
-.__dropdownContainer{
-    display: flex;
-    height: auto;
-    gap: 76px;
-    margin-bottom: 50px;
-    
-}
-
-.__carousel {
-    height: 50px;
-}
