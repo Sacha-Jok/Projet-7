@@ -2,34 +2,40 @@
 
 .__lightbox {
     position: relative;
+    height: 415px;
 
-    .__leftButton {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 24px;
-        background-color: transparent;
-        border: none;
-      }
+    & .__leftButton {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 24px;
+      background-color: transparent;
+      border: none;
+    }
 
-      .__rightButton {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-right: 24px;
-        background-color: transparent;
-        border: none;
-      }
+    & .__rightButton {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-right: 24px;
+      background-color: transparent;
+      border: none;
+    }
 
     & .__image {
-        height: 415px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: $radius;
-
+      height: 415px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: $radius;
     }
+
+    & .__number {
+      position: absolute;
+      color: $white-color;
+    }
+
 }
 
 

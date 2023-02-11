@@ -14,12 +14,13 @@ const Lightbox = ({pictures}) => {
     const prevImage = () => {
         setCurrentIndex((currentIndex - 1 + pictures.length) % pictures.length)
     }
-    
+     
     return (
         <div className={styles.__lightbox}>
-            <button className={styles.__leftButton} onClick={prevImage}><img src={leftArrow} alt="Left arrow"/></button>
+            {pictures.length > 1 && <button className={styles.__leftButton} onClick={prevImage}><img src={leftArrow} alt="Left arrow"/></button>}
             <img className={styles.__image} src={pictures[currentIndex]} alt="Rental pictures"/>
-            <button className={styles.__rightButton} onClick={nextImage}><img src={rightArrow} alt="Right arrow"/></button>
+            {pictures.length > 1 && <button className={styles.__rightButton} onClick={nextImage}><img src={rightArrow} alt="Right arrow"/></button>}
+            <div className={styles.__number}>{pictures.length > 1 && <span>{currentIndex + 1}/{pictures.length}</span>}</div>
         </div>
     );
 };
