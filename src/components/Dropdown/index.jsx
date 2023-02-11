@@ -9,11 +9,7 @@ const Dropdown = ({title, text}) => {
     <details className={styles.__details} open={isOpen} onToggle={() => setIsOpen(!isOpen)}>
         <summary className={styles.__title}>
             {title}
-            <img id='arrow' src={arrow} alt="Arrow" style={{
-                transform: `rotate(${isOpen ? -180 : 0}deg)`,
-                transition: "transform 0.5s ease"
-                }} 
-            />
+            <img id='arrow' src={arrow} alt="Arrow" className={isOpen ? styles.__isOpen : styles.__isClosed } />
         </summary>
         <p className={styles.__description}>{text}</p>
     </details>
