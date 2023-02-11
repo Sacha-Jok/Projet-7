@@ -7,11 +7,13 @@ import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 
 import bannerImg from '../../assets/images/homeBanner.png';
+import Loader from '../../components/Loader';
 
 const Home = () => {
     return (
         <div>
             <Navbar />
+            <Loader />
             <Banner banner={bannerImg} text='Chez vous, partout et ailleurs' />
             <div className={styles.__cardContainer}><Card /></div>
             <Footer />
