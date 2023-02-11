@@ -19,6 +19,7 @@ const Rental = () => {
 
     const equipmentList = appart.equipments.map((equipment) => <li className={styles.__element} key={equipment}>{equipment}</li>);
 
+    const nameArr = appart.host.name.split(" ")
     return (
         <div>
             <Navbar />
@@ -27,7 +28,10 @@ const Rental = () => {
                 <div className={styles.__appartHeader}>
                     <h1 className={styles.__title}>{appart.title}</h1>
                     <div className={styles.__host}>
-                        <h3 className={styles.__name}>{appart.host.name}</h3>
+                        <div className={styles.__name}>
+                            <h3 className={styles.__name}>{nameArr[0]}</h3>
+                            <h3 className={styles.__name}>{nameArr[1]}</h3>
+                        </div>
                         <img className={styles.__pic} src={appart.host.picture} alt={appart.host.name} />
                     </div>
                 </div>
