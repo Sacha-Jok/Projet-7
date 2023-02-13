@@ -25,20 +25,22 @@ const Rental = () => {
             <Navbar />
             <div className={styles.__page}>
                 <Lightbox pictures={appart.pictures}/>
-                <div className={styles.__appartHeader}>
-                    <h1 className={styles.__title}>{appart.title}</h1>
-                    <div className={styles.__host}>
-                        <div className={styles.__name}>
-                            <h3 className={styles.__name}>{nameArr[0]}</h3>
-                            <h3 className={styles.__name}>{nameArr[1]}</h3>
-                        </div>
-                        <img className={styles.__pic} src={appart.host.picture} alt={appart.host.name} />
+                <div className={styles.__textContainer}>
+                    <div className={styles.__titleContainer}>
+                        <h1 className={styles.__title}>{appart.title}</h1>
+                        <h2 className={styles.__subtitle}>{appart.location}</h2>
+                        <Tag tags={appart.tags} />
                     </div>
-                </div>
-                <h2 className={styles.__subtitle}>{appart.location}</h2>
-                <div className={styles.__stars}>
-                    <Tag tags={appart.tags} />
-                    <Rating rating={appart.rating}/>
+                    <div className={styles.__ratingContainer}>
+                        <div className={styles.__host}>
+                            <div className={styles.__name}>
+                                <h3 className={styles.__name}>{nameArr[0]}</h3>
+                                <h3 className={styles.__name}>{nameArr[1]}</h3>
+                            </div>
+                            <img className={styles.__pic} src={appart.host.picture} alt={appart.host.name} />
+                        </div>
+                        <Rating rating={appart.rating}/>
+                    </div>
                 </div>
                 <div className={styles.__dropdownContainer}>
                     <Dropdown title='Description' text={appart.description} />
