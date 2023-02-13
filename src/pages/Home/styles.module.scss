@@ -7,6 +7,16 @@
   padding: 50px;
   margin: 0 100px 50px 100px;
   border-radius: $radius;
-  gap: 50px 60px;
+  gap: 50px;
   background-color: $secondary-color;
 }
+
+@media all and (max-width: 1030px){
+  .__cardContainer{
+    margin: 20px;
+    padding: 0;
+    background: none;
+    gap: 20px;
+  }
+}
+

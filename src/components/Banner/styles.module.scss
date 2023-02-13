@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .__pic {
-    height: 223px;
+    height: 100%;
     width: 100%;
     border-radius: $radius;
     object-fit: cover;
@@ -10,6 +10,7 @@
 
 .__banner {
     margin: 0 100px 31px 100px;
+    height: 223px;
     position: relative;
     text-align: center;
 }
@@ -21,4 +22,17 @@
     transform: translate(-50%, -50%);
     font-size: 48px;
     color: $white-color;
+}
+
+@media all and (max-width: 1030px){
+    .__banner{
+        height: 111px;
+        margin: 0 20px 20px 20px ;
+    }
+    .__text{
+        text-align: left;
+        font-size: 24px;
+        left: 35%;
+        font-weight: 500;
+    }
 }

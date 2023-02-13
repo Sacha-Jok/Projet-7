@@ -2,8 +2,7 @@
 
 .__card {
     position: relative;
-    min-width: 340px;
-    width: 30%;
+    width: 340px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -32,3 +31,9 @@
     color: $white-color;
 }
 
+@media all and (max-width: 1030px){
+    .__card{
+        width: 100%;
+        height: 255px;
+    }
+}

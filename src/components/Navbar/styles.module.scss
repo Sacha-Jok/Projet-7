@@ -4,20 +4,50 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100px;
+  margin: 40px 100px;
 
-  .__logoKasa {
+  & .__logo {
     height: 68px;
     margin: 0 10px;
   }
 
-  a {
-    color: $primary-color;
-    font-weight: 500;
-    font-size: 20px;
-    margin-left: 57px;
-    &:hover {
-      text-decoration: underline;
+  & .__link{
+    display: flex;
+    gap: 57px;
+
+    & a {
+      font-weight: 500;
+      font-size: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 654px){
+  .__navbar{
+    margin: 20px;
+    & .__link {
+      text-transform: uppercase;
+
+      & a {
+        font-size: 12px;
+      }
+    }
+    & .__logo{
+      height: 47px;
+    }
+  }
+}
+
+@media all and (max-width: 400px){
+  .__navbar{
+    display: flex;
+    flex-direction: column;
+    
+    & .__link{
+      margin-top: 10px;
     }
   }
 }

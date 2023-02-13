@@ -20,7 +20,7 @@ const Lightbox = ({pictures}) => {
             {pictures.length > 1 && <button className={`${styles.__leftButton} ${styles.__button}`} onClick={prevImage}><img src={leftArrow} alt="Left arrow"/></button>}
             <img className={styles.__image} src={pictures[currentIndex]} alt="Rental pictures"/>
             {pictures.length > 1 && <button className={`${styles.__rightButton} ${styles.__button}`} onClick={nextImage}><img src={rightArrow} alt="Right arrow"/></button>}
-            {pictures.length > 1 &&<div className={styles.__number}> <span>{currentIndex + 1}/{pictures.length}</span></div>}
+            {pictures.length > 1 && <div className={styles.__number}>{currentIndex + 1}/{pictures.length}</div>}
         </div>
     );
 };

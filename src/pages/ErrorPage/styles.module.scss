@@ -2,21 +2,39 @@
 
 .__errorPage{
     text-align: center;
-  
-    .__number {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 288px;
-    line-height: 143%;
-  }
-
-    .__message {
+    & .__errorSection{
+      & .__number {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 143%;
+      }
+      & .__message {
         font-size: 36px;
-    }
-
-    & .__link {
+      }
+      & .__link {
         margin-top: 182px;
         font-size: 18px;
         text-decoration: underline;
+      }
+    } 
+}
+
+@media all and (max-width: 1000px){
+  .__errorPage{
+    .__errorSection{
+      margin: 48px;
+
+      & .__number{
+        font-size: 96px;
+      }
+      & .__message {
+        font-size: 18px;
+      }
+      & .__link{
+        font-size: 14px;
+        margin-top: 70px;
+      }
+    }
   }
 }

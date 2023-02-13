@@ -46,7 +46,33 @@
         display: flex;
         height: auto;
         gap: 76px;
-        margin-bottom: 200px; 
+        margin-bottom: 50px; 
+    }
+}
+
+@media all and (max-width: 1000px){
+    .__page{
+        margin: 0 20px;
+
+        & .__textContainer{
+            flex-direction: column;
+            text-align: left;
+            & .__titleContainer{
+                width: 100%;
+            }
+            & .__ratingContainer{
+                display: flex;
+                width: 100%;
+                margin-top: 16px;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+            }
+        }
+
+        & .__dropdownContainer{
+            flex-direction: column;
+        }
     }
 }
 

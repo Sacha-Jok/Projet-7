@@ -31,10 +31,28 @@
 
     & .__number {
       position: absolute;
+      font-size: 18px;
+      bottom: 25px;
+      left: 50%;
       color: $white-color;
+
     }
 }
 
+@media all and (max-width: 1000px){
+  .__lightbox{
+    & .__number{
+      display: none;
+    }
+  }
+}
 
-
-
+@media all and (max-width: 654px){
+  .__lightbox{
+    & .__button{
+      & img{
+        height: 30px;
+      }
+    }
+  }
+}
