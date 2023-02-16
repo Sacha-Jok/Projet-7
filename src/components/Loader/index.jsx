@@ -10,13 +10,21 @@ const Loader = () => {
     let imagesLoaded = 0;
   
     images.forEach(image => {
-      image.addEventListener('load', () => {
+      if (image.complete) {
         imagesLoaded++;
-        if (imagesLoaded === images.length) {
-          setLoading(false);
-        }
-      });
+      } else {
+        image.addEventListener('load', () => {
+          imagesLoaded++;
+          if (imagesLoaded === images.length) {
+            setLoading(false);
+          }
+        });
+      }
     });
+  
+    if (imagesLoaded === images.length) {
+      setLoading(false);
+    }
   }, []);
 
   return (
