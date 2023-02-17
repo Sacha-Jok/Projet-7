@@ -2,7 +2,7 @@
 
 .__card {
     position: relative;
-    min-width: 340px;
+    min-width: 312px;
     max-width: 30%;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -39,5 +39,11 @@
         margin-bottom: 20px;
         width: 100%;
         height: 255px;
+    }
+}
+
+@media all and (max-width: 1030px){
+    .__card{
+        margin-bottom: 20px ;
     }
 }
